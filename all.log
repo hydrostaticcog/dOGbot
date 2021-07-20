@@ -1,0 +1,443 @@
+2021-07-14 11:15:56,728 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:15:56,738 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:15:56,738 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:15:56,739 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:15:56,740 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:15:59,312 :: INFO :: -----------
+2021-07-14 11:15:59,312 :: INFO :: The bot is ready.
+2021-07-14 11:15:59,312 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:15:59,312 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:15:59,312 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:15:59,313 :: INFO :: 5 cogs are loaded
+2021-07-14 11:15:59,313 :: INFO :: -----------
+2021-07-14 11:15:59,313 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:16:52,264 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:16:52,273 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:16:52,274 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:16:52,274 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:16:52,275 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:16:54,983 :: INFO :: -----------
+2021-07-14 11:16:54,983 :: INFO :: The bot is ready.
+2021-07-14 11:16:54,983 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:16:54,983 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:16:54,983 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:16:54,983 :: INFO :: 5 cogs are loaded
+2021-07-14 11:16:54,983 :: INFO :: -----------
+2021-07-14 11:16:54,983 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:17:20,908 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -help
+2021-07-14 11:28:37,855 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:28:37,864 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:28:37,865 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:28:37,865 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:28:37,866 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:28:40,501 :: INFO :: -----------
+2021-07-14 11:28:40,501 :: INFO :: The bot is ready.
+2021-07-14 11:28:40,501 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:28:40,501 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:28:40,501 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:28:40,501 :: INFO :: 5 cogs are loaded
+2021-07-14 11:28:40,501 :: INFO :: -----------
+2021-07-14 11:28:40,501 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:30:24,958 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:30:24,967 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:30:24,967 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:30:24,967 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:30:24,968 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:30:27,619 :: INFO :: -----------
+2021-07-14 11:30:27,619 :: INFO :: The bot is ready.
+2021-07-14 11:30:27,619 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:30:27,619 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:30:27,619 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:30:27,619 :: INFO :: 5 cogs are loaded
+2021-07-14 11:30:27,619 :: INFO :: -----------
+2021-07-14 11:30:27,620 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:30:43,332 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:30:43,342 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:30:43,342 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:30:43,343 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:30:43,343 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:30:43,344 :: ERROR :: > Failed to load extension cogs.utility
+ExtensionFailed: Extension 'cogs.utility' raised an error: ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/utility.py", line 3, in <module>
+    import flask
+ModuleNotFoundError: No module named 'flask'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.utility' raised an error: ModuleNotFoundError: No module named 'flask'
+2021-07-14 11:30:45,959 :: INFO :: -----------
+2021-07-14 11:30:45,959 :: INFO :: The bot is ready.
+2021-07-14 11:30:45,959 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:30:45,959 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:30:45,959 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:30:45,959 :: INFO :: 5 cogs are loaded
+2021-07-14 11:30:45,959 :: INFO :: -----------
+2021-07-14 11:30:45,959 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:31:00,202 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:31:00,211 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:31:00,211 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:31:00,212 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:31:00,212 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:31:00,261 :: ERROR :: > Failed to load extension cogs.utility
+ExtensionFailed: Extension 'cogs.utility' raised an error: NameError: name 'Flask' is not defined
+Traceback (most recent call last):
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/utility.py", line 9, in <module>
+    app = Flask(__name__)
+NameError: name 'Flask' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.utility' raised an error: NameError: name 'Flask' is not defined
+2021-07-14 11:31:02,878 :: INFO :: -----------
+2021-07-14 11:31:02,878 :: INFO :: The bot is ready.
+2021-07-14 11:31:02,878 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:31:02,878 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:31:02,878 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:31:02,878 :: INFO :: 5 cogs are loaded
+2021-07-14 11:31:02,878 :: INFO :: -----------
+2021-07-14 11:31:02,878 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:31:15,098 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:31:15,108 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:31:15,108 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:31:15,108 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:31:15,109 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:31:15,109 :: ERROR :: > Failed to load extension cogs.utility
+ExtensionFailed: Extension 'cogs.utility' raised an error: SyntaxError: invalid syntax (utility.py, line 3)
+Traceback (most recent call last):
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/utility.py", line 3
+    import flask import Flask
+                 ^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.utility' raised an error: SyntaxError: invalid syntax (utility.py, line 3)
+2021-07-14 11:31:17,694 :: INFO :: -----------
+2021-07-14 11:31:17,694 :: INFO :: The bot is ready.
+2021-07-14 11:31:17,694 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:31:17,695 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:31:17,695 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:31:17,695 :: INFO :: 5 cogs are loaded
+2021-07-14 11:31:17,695 :: INFO :: -----------
+2021-07-14 11:31:17,695 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:31:24,751 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:31:24,760 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:31:24,760 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:31:24,760 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:31:24,761 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:31:24,811 :: ERROR :: > Failed to load extension cogs.utility
+NoEntryPointError: Extension 'cogs.utility' has no 'setup' function.
+Traceback (most recent call last):
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 612, in _load_from_module_spec
+    setup = getattr(lib, 'setup')
+AttributeError: module 'cogs.utility' has no attribute 'setup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 615, in _load_from_module_spec
+    raise errors.NoEntryPointError(key)
+discord.ext.commands.errors.NoEntryPointError: Extension 'cogs.utility' has no 'setup' function.
+2021-07-14 11:31:27,468 :: INFO :: -----------
+2021-07-14 11:31:27,468 :: INFO :: The bot is ready.
+2021-07-14 11:31:27,468 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:31:27,468 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:31:27,468 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:31:27,468 :: INFO :: 5 cogs are loaded
+2021-07-14 11:31:27,468 :: INFO :: -----------
+2021-07-14 11:31:27,468 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:31:37,526 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:31:37,535 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:31:37,535 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:31:37,535 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:31:37,536 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:31:37,588 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:31:40,215 :: INFO :: -----------
+2021-07-14 11:31:40,215 :: INFO :: The bot is ready.
+2021-07-14 11:31:40,215 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:31:40,215 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:31:40,215 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:31:40,216 :: INFO :: 6 cogs are loaded
+2021-07-14 11:31:40,216 :: INFO :: -----------
+2021-07-14 11:36:20,566 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:36:20,578 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:36:20,579 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:36:20,580 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:36:20,580 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:36:20,581 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:36:20,594 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 11:36:23,232 :: INFO :: -----------
+2021-07-14 11:36:23,232 :: INFO :: The bot is ready.
+2021-07-14 11:36:23,232 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:36:23,232 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:36:23,233 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:36:23,233 :: INFO :: 7 cogs are loaded
+2021-07-14 11:36:23,233 :: INFO :: -----------
+2021-07-14 11:36:23,233 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:36:23,234 :: INFO :: dOGbot JSON API listening
+2021-07-14 11:36:27,326 :: INFO :: 127.0.0.1 [14/Jul/2021:16:36:27 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+2021-07-14 11:37:14,250 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 11:37:15,377 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:37:15,387 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:37:15,387 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:37:15,387 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:37:15,388 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:37:15,388 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:37:15,399 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 11:37:18,175 :: INFO :: -----------
+2021-07-14 11:37:18,175 :: INFO :: The bot is ready.
+2021-07-14 11:37:18,175 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:37:18,175 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:37:18,175 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:37:18,175 :: INFO :: 7 cogs are loaded
+2021-07-14 11:37:18,176 :: INFO :: -----------
+2021-07-14 11:37:18,176 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:37:36,186 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 11:37:37,300 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:37:37,310 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:37:37,310 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:37:37,311 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:37:37,311 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:37:37,311 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:37:37,323 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 11:37:39,980 :: INFO :: -----------
+2021-07-14 11:37:39,981 :: INFO :: The bot is ready.
+2021-07-14 11:37:39,981 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:37:39,981 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:37:39,981 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:37:39,981 :: INFO :: 7 cogs are loaded
+2021-07-14 11:37:39,981 :: INFO :: -----------
+2021-07-14 11:37:39,981 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:38:51,816 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 11:38:52,948 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:38:52,958 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:38:52,958 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:38:52,959 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:38:52,960 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:38:52,960 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:38:52,973 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 11:38:55,647 :: INFO :: -----------
+2021-07-14 11:38:55,647 :: INFO :: The bot is ready.
+2021-07-14 11:38:55,647 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:38:55,647 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:38:55,647 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:38:55,647 :: INFO :: 7 cogs are loaded
+2021-07-14 11:38:55,647 :: INFO :: -----------
+2021-07-14 11:38:55,648 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:39:09,329 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 11:39:10,356 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:39:10,367 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:39:10,368 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:39:10,368 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:39:10,369 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:39:10,369 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:39:10,380 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 11:39:13,004 :: INFO :: -----------
+2021-07-14 11:39:13,004 :: INFO :: The bot is ready.
+2021-07-14 11:39:13,004 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:39:13,004 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:39:13,004 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:39:13,004 :: INFO :: 7 cogs are loaded
+2021-07-14 11:39:13,004 :: INFO :: -----------
+2021-07-14 11:39:13,005 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:39:13,005 :: INFO :: dOGbot JSON API listening
+2021-07-14 11:39:16,643 :: INFO :: 127.0.0.1 [14/Jul/2021:16:39:16 +0000] "GET / HTTP/1.1" 200 173 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+2021-07-14 11:54:13,036 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:54:25,855 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 11:54:47,746 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:54:47,755 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:54:47,756 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:54:47,756 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:54:47,757 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:54:47,758 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:54:47,770 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 11:54:47,771 :: ERROR :: > Failed to load extension cogs.fun
+ExtensionFailed: Extension 'cogs.fun' raised an error: TypeError: setup() missing 1 required positional argument: 'bot'
+Traceback (most recent call last):
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 605, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/fun.py", line 18, in <module>
+    setup = Fun.setup()
+TypeError: setup() missing 1 required positional argument: 'bot'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 677, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 608, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.fun' raised an error: TypeError: setup() missing 1 required positional argument: 'bot'
+2021-07-14 11:54:50,396 :: INFO :: -----------
+2021-07-14 11:54:50,397 :: INFO :: The bot is ready.
+2021-07-14 11:54:50,397 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:54:50,397 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:54:50,397 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:54:50,397 :: INFO :: 7 cogs are loaded
+2021-07-14 11:54:50,397 :: INFO :: -----------
+2021-07-14 11:54:50,397 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:54:50,398 :: INFO :: dOGbot JSON API listening
+2021-07-14 11:55:13,909 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 11:55:15,080 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:55:15,090 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:55:15,090 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:55:15,091 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:55:15,091 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:55:15,092 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:55:15,103 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 11:55:15,104 :: DEBUG :: > cogs.fun loaded!
+2021-07-14 11:55:17,708 :: INFO :: -----------
+2021-07-14 11:55:17,708 :: INFO :: The bot is ready.
+2021-07-14 11:55:17,708 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:55:17,708 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:55:17,708 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:55:17,708 :: INFO :: 8 cogs are loaded
+2021-07-14 11:55:17,709 :: INFO :: -----------
+2021-07-14 11:55:17,709 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:55:17,709 :: INFO :: dOGbot JSON API listening
+2021-07-14 11:55:24,891 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -p
+2021-07-14 11:55:26,919 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -p
+2021-07-14 11:55:28,151 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -p
+2021-07-14 11:55:29,059 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -p
+2021-07-14 11:55:32,112 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -kuki
+2021-07-14 11:56:20,213 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 11:56:21,511 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:56:21,521 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:56:21,521 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:56:21,522 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:56:21,523 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:56:21,523 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:56:21,534 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 11:56:21,534 :: DEBUG :: > cogs.fun loaded!
+2021-07-14 11:56:24,056 :: INFO :: -----------
+2021-07-14 11:56:24,057 :: INFO :: The bot is ready.
+2021-07-14 11:56:24,057 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:56:24,057 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:56:24,057 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:56:24,057 :: INFO :: 8 cogs are loaded
+2021-07-14 11:56:24,057 :: INFO :: -----------
+2021-07-14 11:56:24,057 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:56:24,058 :: INFO :: dOGbot JSON API listening
+2021-07-14 11:56:30,035 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -help
+2021-07-14 11:57:18,498 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 11:57:19,758 :: DEBUG :: > jishaku loaded!
+2021-07-14 11:57:19,767 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 11:57:19,768 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 11:57:19,768 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 11:57:19,769 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 11:57:19,769 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 11:57:19,780 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 11:57:19,780 :: DEBUG :: > cogs.fun loaded!
+2021-07-14 11:57:22,304 :: INFO :: -----------
+2021-07-14 11:57:22,305 :: INFO :: The bot is ready.
+2021-07-14 11:57:22,305 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 11:57:22,305 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 11:57:22,305 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 11:57:22,305 :: INFO :: 8 cogs are loaded
+2021-07-14 11:57:22,305 :: INFO :: -----------
+2021-07-14 11:57:22,305 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 11:57:22,306 :: INFO :: dOGbot JSON API listening
+2021-07-14 11:57:23,361 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -help
+2021-07-14 11:58:06,149 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -shards
+2021-07-14 12:00:34,695 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 12:00:35,511 :: DEBUG :: > jishaku loaded!
+2021-07-14 12:00:35,520 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 12:00:35,520 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 12:00:35,521 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 12:00:35,522 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 12:00:35,522 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 12:00:35,533 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 12:00:35,534 :: DEBUG :: > cogs.fun loaded!
+2021-07-14 12:00:38,096 :: INFO :: -----------
+2021-07-14 12:00:38,096 :: INFO :: The bot is ready.
+2021-07-14 12:00:38,096 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 12:00:38,096 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 12:00:38,097 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 12:00:38,097 :: INFO :: 8 cogs are loaded
+2021-07-14 12:00:38,097 :: INFO :: -----------
+2021-07-14 12:00:38,097 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 12:00:38,098 :: INFO :: dOGbot JSON API listening
+2021-07-14 12:00:39,476 :: INFO :: 778757191770308628 - #general :: <hydrostaticcog#2330> -help
+2021-07-14 12:15:38,130 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 12:16:11,582 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 12:17:56,745 :: DEBUG :: > jishaku loaded!
+2021-07-14 12:17:56,754 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 12:17:56,754 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 12:17:56,755 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 12:17:56,755 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 12:17:56,755 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 12:17:56,766 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 12:17:56,766 :: DEBUG :: > cogs.fun loaded!
+2021-07-14 12:17:59,451 :: INFO :: -----------
+2021-07-14 12:17:59,451 :: INFO :: The bot is ready.
+2021-07-14 12:17:59,451 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 12:17:59,451 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 12:17:59,451 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 12:17:59,451 :: INFO :: 8 cogs are loaded
+2021-07-14 12:17:59,451 :: INFO :: -----------
+2021-07-14 12:17:59,451 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 12:17:59,452 :: INFO :: dOGbot JSON API listening
+2021-07-14 12:18:06,224 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-14 12:18:07,652 :: DEBUG :: > jishaku loaded!
+2021-07-14 12:18:07,661 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-14 12:18:07,661 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-14 12:18:07,662 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-14 12:18:07,662 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-14 12:18:07,663 :: DEBUG :: > cogs.utility loaded!
+2021-07-14 12:18:07,673 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-14 12:18:07,673 :: DEBUG :: > cogs.fun loaded!
+2021-07-14 12:18:10,464 :: INFO :: -----------
+2021-07-14 12:18:10,464 :: INFO :: The bot is ready.
+2021-07-14 12:18:10,464 :: INFO :: Logged in as testbot (780811646981111848).
+2021-07-14 12:18:10,464 :: INFO :: I see 1 guilds, and 1 members.
+2021-07-14 12:18:10,464 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=780811646981111848&scope=bot&permissions=0
+2021-07-14 12:18:10,464 :: INFO :: 8 cogs are loaded
+2021-07-14 12:18:10,464 :: INFO :: -----------
+2021-07-14 12:18:10,464 :: DEBUG :: 778757191770308628 - #test :: Updating status message
+2021-07-14 12:18:10,465 :: INFO :: dOGbot JSON API listening
+2021-07-14 12:22:28,036 :: INFO :: 127.0.0.1 [14/Jul/2021:17:22:28 +0000] "GET / HTTP/1.1" 200 173 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+2021-07-14 12:26:23,755 :: INFO :: dOGbot JSON API is shutting down...

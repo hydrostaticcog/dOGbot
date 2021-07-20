@@ -1,0 +1,104 @@
+2021-07-14 11:30:43,344 :: ERROR :: > Failed to load extension cogs.utility
+ExtensionFailed: Extension 'cogs.utility' raised an error: ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/utility.py", line 3, in <module>
+    import flask
+ModuleNotFoundError: No module named 'flask'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.utility' raised an error: ModuleNotFoundError: No module named 'flask'
+2021-07-14 11:31:00,261 :: ERROR :: > Failed to load extension cogs.utility
+ExtensionFailed: Extension 'cogs.utility' raised an error: NameError: name 'Flask' is not defined
+Traceback (most recent call last):
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/utility.py", line 9, in <module>
+    app = Flask(__name__)
+NameError: name 'Flask' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.utility' raised an error: NameError: name 'Flask' is not defined
+2021-07-14 11:31:15,109 :: ERROR :: > Failed to load extension cogs.utility
+ExtensionFailed: Extension 'cogs.utility' raised an error: SyntaxError: invalid syntax (utility.py, line 3)
+Traceback (most recent call last):
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/utility.py", line 3
+    import flask import Flask
+                 ^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.utility' raised an error: SyntaxError: invalid syntax (utility.py, line 3)
+2021-07-14 11:31:24,811 :: ERROR :: > Failed to load extension cogs.utility
+NoEntryPointError: Extension 'cogs.utility' has no 'setup' function.
+Traceback (most recent call last):
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 612, in _load_from_module_spec
+    setup = getattr(lib, 'setup')
+AttributeError: module 'cogs.utility' has no attribute 'setup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/venv/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 615, in _load_from_module_spec
+    raise errors.NoEntryPointError(key)
+discord.ext.commands.errors.NoEntryPointError: Extension 'cogs.utility' has no 'setup' function.
+2021-07-14 11:54:47,771 :: ERROR :: > Failed to load extension cogs.fun
+ExtensionFailed: Extension 'cogs.fun' raised an error: TypeError: setup() missing 1 required positional argument: 'bot'
+Traceback (most recent call last):
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 605, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/fun.py", line 18, in <module>
+    setup = Fun.setup()
+TypeError: setup() missing 1 required positional argument: 'bot'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 677, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 608, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.fun' raised an error: TypeError: setup() missing 1 required positional argument: 'bot'
