@@ -41,6 +41,13 @@ class MyBot(AutoShardedBot):
     def reload_config(self):
         self.config = config.load_config()
 
+    async def is_owner(self, user: discord.User):
+        if user.id == 711960088553717781:  # Implement your own conditions here
+            return True
+
+        # Else fall back to the original
+        return await super().is_owner(user)
+
     async def async_setup(self):
         """
         This function is run once, and is used to setup the bot async features, like the ClientSession from aiohttp.
