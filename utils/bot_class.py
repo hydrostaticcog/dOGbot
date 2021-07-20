@@ -67,7 +67,6 @@ class MyBot(AutoShardedBot):
             await self.invoke(ctx)
 
         if message.content == "🏓":
-            await ctx.message.delete()
             await ctx.send(":ping_pong:")
 
     async def on_command(self, ctx: MyContext):

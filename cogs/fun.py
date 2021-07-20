@@ -10,7 +10,6 @@ class Fun(Cog):
         """
         Play ping pong with dOGbot!
         """
-        await ctx.message.delete()
         await ctx.send(":ping_pong:")
 
     @commands.command(aliases=["kuki"])
