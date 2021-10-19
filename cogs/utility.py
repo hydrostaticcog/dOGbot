@@ -24,22 +24,21 @@ class Utils(Cog):
         """
         Check out dOGbone's Twitter!
         """
-        await ctx.send(":Twitter: Go check out dOGbone's Twitter! <https://twitter.com/dOGbon32>")
+        await ctx.send("<:Twitter:823582218332143666> Go check out dOGbone's Twitter! <https://twitter.com/dOGbon32>")
 
     @commands.command()
     async def youtube(self, ctx: MyContext):
         """
         Check out dOGbone's Youtube channel!
         """
-        await ctx.send(":Youtube: Go check out dOGbone's Youtube channel! \
-                        <https://www.youtube.com/channel/UCTDV8aurw0iQRjSBqw7aEEw>")
+        await ctx.send("<:Youtube:823582109959979028> Go check out dOGbone's Youtube channel! <https://www.youtube.com/channel/UCTDV8aurw0iQRjSBqw7aEEw>")
 
     @commands.command()
     async def twitch(self, ctx: MyContext):
         """
         Check out dOGbone's Twitch channel!
         """
-        await ctx.send(":Twitch: Go check out dOGbone's Twitch channel! <https://www.twitch.tv/dogbon32>")
+        await ctx.send("<:Twitch:823582166231416884> Go check out dOGbone's Twitch channel! <https://www.twitch.tv/dogbon32>")
 
 
 

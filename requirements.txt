@@ -13,3 +13,4 @@ Babel
 discord.py-stubs
 python-dateutil
 flask
+aiohttp_cors
