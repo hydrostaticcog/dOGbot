@@ -102,3 +102,221 @@ Traceback (most recent call last):
   File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 608, in _load_from_module_spec
     raise errors.ExtensionFailed(key, e) from e
 discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.fun' raised an error: TypeError: setup() missing 1 required positional argument: 'bot'
+2021-07-19 21:19:36,868 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-07-19 21:19:39,443 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:24:45,367 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-07-19 21:24:47,922 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:25:04,150 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:29:03,271 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:29:59,676 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:32:44,451 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:33:03,766 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:34:11,072 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:34:58,039 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:35:11,896 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:36:27,648 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:43:41,353 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:43:44,082 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:44:55,554 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:44:58,194 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:46:14,850 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:46:17,637 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:46:41,521 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:46:44,110 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:48:40,754 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:48:43,416 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:48:56,083 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:48:58,570 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:53:31,064 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:54:15,294 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:54:41,368 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:54:56,703 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:56:01,142 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:56:52,373 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:23:44,007 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:26:04,632 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:26:08,576 :: ERROR :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/utility.py", line 21, in ping
+    embed.addField(name="API Ping", value=time_delta, inline=False)
+AttributeError: 'Embed' object has no attribute 'addField'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 939, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 863, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 94, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Embed' object has no attribute 'addField'
+
+2021-10-19 15:27:01,023 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:28:28,544 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:29:08,743 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:29:57,997 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:30:43,873 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:45:43,907 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:47:05,513 :: WARNING :: The status channel for the support server command is configured improperly.

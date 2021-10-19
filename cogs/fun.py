@@ -13,11 +13,13 @@ class Fun(Cog):
         await ctx.send(":ping_pong:")
 
     @commands.command(aliases=["kuki"])
-    async def cookie(self, ctx: MyContext):
+    async def cookie(self, ctx: MyContext, recipient: discord.User = None):
         """
-        Get a free cookie!
+        Get/Give a free cookie!
         """
-        await ctx.message.delete()
-        await ctx.send(f"{ctx.author.mention}, here you go! :cookie:")
+        if recipient:
+            await ctx.send(f"{recipient.mention}, here is a <:Kuki:823597497997328416> from {ctx.author.mention}")
+        else:
+            await ctx.send(f"{ctx.author.mention}, here you go! <:Kuki:823597497997328416>")
 
 setup = Fun.setup

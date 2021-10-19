@@ -441,3 +441,766 @@ discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.fun' raised an erro
 2021-07-14 12:18:10,465 :: INFO :: dOGbot JSON API listening
 2021-07-14 12:22:28,036 :: INFO :: 127.0.0.1 [14/Jul/2021:17:22:28 +0000] "GET / HTTP/1.1" 200 173 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
 2021-07-14 12:26:23,755 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-19 21:19:36,855 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:19:36,866 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:19:36,866 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:19:36,867 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:19:36,867 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:19:36,868 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:19:36,868 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-07-19 21:19:36,869 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:19:39,443 :: INFO :: -----------
+2021-07-19 21:19:39,443 :: INFO :: The bot is ready.
+2021-07-19 21:19:39,443 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:19:39,443 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:19:39,443 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:19:39,443 :: INFO :: 7 cogs are loaded
+2021-07-19 21:19:39,443 :: INFO :: -----------
+2021-07-19 21:19:39,443 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:24:45,356 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:24:45,365 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:24:45,366 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:24:45,366 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:24:45,367 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:24:45,367 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:24:45,367 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/media/hydrostaticcog/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydrostaticcog/.local/lib/python3.8/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-07-19 21:24:45,368 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:24:47,921 :: INFO :: -----------
+2021-07-19 21:24:47,921 :: INFO :: The bot is ready.
+2021-07-19 21:24:47,921 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:24:47,921 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:24:47,921 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:24:47,921 :: INFO :: 7 cogs are loaded
+2021-07-19 21:24:47,922 :: INFO :: -----------
+2021-07-19 21:24:47,922 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:25:01,591 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:25:01,600 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:25:01,600 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:25:01,600 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:25:01,601 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:25:01,601 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:25:01,611 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-19 21:25:01,612 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:25:04,150 :: INFO :: -----------
+2021-07-19 21:25:04,150 :: INFO :: The bot is ready.
+2021-07-19 21:25:04,150 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:25:04,150 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:25:04,150 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:25:04,150 :: INFO :: 8 cogs are loaded
+2021-07-19 21:25:04,150 :: INFO :: -----------
+2021-07-19 21:25:04,150 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:25:04,151 :: INFO :: dOGbot JSON API listening
+2021-07-19 21:25:09,800 :: INFO :: 772889538300608512 - #developers-💻 :: <hydrostaticcog#2330> -jsk
+2021-07-19 21:25:19,231 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-19 21:29:00,569 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:29:00,577 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:29:00,578 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:29:00,578 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:29:00,579 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:29:00,579 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:29:00,589 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-19 21:29:00,590 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:29:03,270 :: INFO :: -----------
+2021-07-19 21:29:03,270 :: INFO :: The bot is ready.
+2021-07-19 21:29:03,270 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:29:03,270 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:29:03,270 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:29:03,270 :: INFO :: 8 cogs are loaded
+2021-07-19 21:29:03,270 :: INFO :: -----------
+2021-07-19 21:29:03,271 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:29:03,271 :: INFO :: dOGbot JSON API listening
+2021-07-19 21:29:56,006 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-19 21:29:57,004 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:29:57,012 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:29:57,013 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:29:57,013 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:29:57,014 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:29:57,014 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:29:57,025 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-19 21:29:57,026 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:29:59,675 :: INFO :: -----------
+2021-07-19 21:29:59,675 :: INFO :: The bot is ready.
+2021-07-19 21:29:59,675 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:29:59,675 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:29:59,675 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:29:59,675 :: INFO :: 8 cogs are loaded
+2021-07-19 21:29:59,675 :: INFO :: -----------
+2021-07-19 21:29:59,676 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:29:59,676 :: INFO :: dOGbot JSON API listening
+2021-07-19 21:32:40,846 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-19 21:32:41,880 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:32:41,888 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:32:41,889 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:32:41,889 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:32:41,889 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:32:41,890 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:32:41,901 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-19 21:32:41,901 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:32:44,450 :: INFO :: -----------
+2021-07-19 21:32:44,450 :: INFO :: The bot is ready.
+2021-07-19 21:32:44,450 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:32:44,450 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:32:44,451 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:32:44,451 :: INFO :: 8 cogs are loaded
+2021-07-19 21:32:44,451 :: INFO :: -----------
+2021-07-19 21:32:44,451 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:32:44,451 :: INFO :: dOGbot JSON API listening
+2021-07-19 21:32:59,989 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-19 21:33:01,111 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:33:01,121 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:33:01,122 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:33:01,122 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:33:01,123 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:33:01,123 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:33:01,134 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-19 21:33:01,135 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:33:03,766 :: INFO :: -----------
+2021-07-19 21:33:03,766 :: INFO :: The bot is ready.
+2021-07-19 21:33:03,766 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:33:03,766 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:33:03,766 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:33:03,766 :: INFO :: 8 cogs are loaded
+2021-07-19 21:33:03,766 :: INFO :: -----------
+2021-07-19 21:33:03,766 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:33:03,767 :: INFO :: dOGbot JSON API listening
+2021-07-19 21:34:07,485 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-19 21:34:08,483 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:34:08,491 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:34:08,492 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:34:08,492 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:34:08,493 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:34:08,493 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:34:08,504 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-19 21:34:08,505 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:34:11,071 :: INFO :: -----------
+2021-07-19 21:34:11,071 :: INFO :: The bot is ready.
+2021-07-19 21:34:11,071 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:34:11,072 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:34:11,072 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:34:11,072 :: INFO :: 8 cogs are loaded
+2021-07-19 21:34:11,072 :: INFO :: -----------
+2021-07-19 21:34:11,072 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:34:11,072 :: INFO :: dOGbot JSON API listening
+2021-07-19 21:34:54,537 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-19 21:34:55,469 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:34:55,477 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:34:55,478 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:34:55,478 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:34:55,479 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:34:55,479 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:34:55,492 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-19 21:34:55,492 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:34:58,038 :: INFO :: -----------
+2021-07-19 21:34:58,038 :: INFO :: The bot is ready.
+2021-07-19 21:34:58,038 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:34:58,038 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:34:58,039 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:34:58,039 :: INFO :: 8 cogs are loaded
+2021-07-19 21:34:58,039 :: INFO :: -----------
+2021-07-19 21:34:58,039 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:34:58,039 :: INFO :: dOGbot JSON API listening
+2021-07-19 21:35:08,361 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-19 21:35:09,312 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:35:09,320 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:35:09,321 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:35:09,321 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:35:09,322 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:35:09,322 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:35:09,333 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-19 21:35:09,333 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:35:11,896 :: INFO :: -----------
+2021-07-19 21:35:11,896 :: INFO :: The bot is ready.
+2021-07-19 21:35:11,896 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:35:11,896 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:35:11,896 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:35:11,896 :: INFO :: 8 cogs are loaded
+2021-07-19 21:35:11,896 :: INFO :: -----------
+2021-07-19 21:35:11,896 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:35:11,896 :: INFO :: dOGbot JSON API listening
+2021-07-19 21:36:24,139 :: INFO :: dOGbot JSON API is shutting down...
+2021-07-19 21:36:24,958 :: DEBUG :: > jishaku loaded!
+2021-07-19 21:36:24,966 :: DEBUG :: > cogs.error_handling loaded!
+2021-07-19 21:36:24,967 :: DEBUG :: > cogs.background_loop loaded!
+2021-07-19 21:36:24,967 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-07-19 21:36:24,968 :: DEBUG :: > cogs.database_commands loaded!
+2021-07-19 21:36:24,968 :: DEBUG :: > cogs.utility loaded!
+2021-07-19 21:36:24,979 :: DEBUG :: > cogs.rest_api loaded!
+2021-07-19 21:36:24,979 :: DEBUG :: > cogs.fun loaded!
+2021-07-19 21:36:27,647 :: INFO :: -----------
+2021-07-19 21:36:27,647 :: INFO :: The bot is ready.
+2021-07-19 21:36:27,647 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-07-19 21:36:27,647 :: INFO :: I see 3 guilds, and 1 members.
+2021-07-19 21:36:27,647 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-07-19 21:36:27,648 :: INFO :: 8 cogs are loaded
+2021-07-19 21:36:27,648 :: INFO :: -----------
+2021-07-19 21:36:27,648 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-07-19 21:36:27,648 :: INFO :: dOGbot JSON API listening
+2021-07-19 21:39:13,890 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 14:43:41,339 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:43:41,349 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:43:41,350 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:43:41,351 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:43:41,352 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:43:41,352 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:43:41,353 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:43:41,354 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:43:44,082 :: INFO :: -----------
+2021-10-19 14:43:44,082 :: INFO :: The bot is ready.
+2021-10-19 14:43:44,082 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:43:44,082 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:43:44,082 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:43:44,082 :: INFO :: 7 cogs are loaded
+2021-10-19 14:43:44,082 :: INFO :: -----------
+2021-10-19 14:43:44,082 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:44:55,542 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:44:55,552 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:44:55,552 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:44:55,553 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:44:55,553 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:44:55,554 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:44:55,554 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:44:55,554 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:44:58,193 :: INFO :: -----------
+2021-10-19 14:44:58,193 :: INFO :: The bot is ready.
+2021-10-19 14:44:58,193 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:44:58,194 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:44:58,194 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:44:58,194 :: INFO :: 7 cogs are loaded
+2021-10-19 14:44:58,194 :: INFO :: -----------
+2021-10-19 14:44:58,194 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:46:14,839 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:46:14,849 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:46:14,849 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:46:14,849 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:46:14,850 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:46:14,850 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:46:14,850 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:46:14,851 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:46:17,636 :: INFO :: -----------
+2021-10-19 14:46:17,636 :: INFO :: The bot is ready.
+2021-10-19 14:46:17,637 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:46:17,637 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:46:17,637 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:46:17,637 :: INFO :: 7 cogs are loaded
+2021-10-19 14:46:17,637 :: INFO :: -----------
+2021-10-19 14:46:17,637 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:46:41,510 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:46:41,519 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:46:41,520 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:46:41,520 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:46:41,520 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:46:41,521 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:46:41,521 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:46:41,522 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:46:44,109 :: INFO :: -----------
+2021-10-19 14:46:44,110 :: INFO :: The bot is ready.
+2021-10-19 14:46:44,110 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:46:44,110 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:46:44,110 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:46:44,110 :: INFO :: 7 cogs are loaded
+2021-10-19 14:46:44,110 :: INFO :: -----------
+2021-10-19 14:46:44,110 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:48:40,743 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:48:40,752 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:48:40,753 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:48:40,753 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:48:40,754 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:48:40,754 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:48:40,754 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:48:40,755 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:48:43,415 :: INFO :: -----------
+2021-10-19 14:48:43,415 :: INFO :: The bot is ready.
+2021-10-19 14:48:43,416 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:48:43,416 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:48:43,416 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:48:43,416 :: INFO :: 7 cogs are loaded
+2021-10-19 14:48:43,416 :: INFO :: -----------
+2021-10-19 14:48:43,416 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:48:56,071 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:48:56,081 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:48:56,081 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:48:56,082 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:48:56,082 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:48:56,082 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:48:56,083 :: ERROR :: > Failed to load extension cogs.rest_api
+ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/rest_api.py", line 7, in <module>
+    import aiohttp_cors
+ModuleNotFoundError: No module named 'aiohttp_cors'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/main.py", line 46, in <module>
+    bot.load_extension(cog_name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.rest_api' raised an error: ModuleNotFoundError: No module named 'aiohttp_cors'
+2021-10-19 14:48:56,083 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:48:58,569 :: INFO :: -----------
+2021-10-19 14:48:58,570 :: INFO :: The bot is ready.
+2021-10-19 14:48:58,570 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:48:58,570 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:48:58,570 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:48:58,570 :: INFO :: 7 cogs are loaded
+2021-10-19 14:48:58,570 :: INFO :: -----------
+2021-10-19 14:48:58,570 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:53:28,313 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:53:28,322 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:53:28,323 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:53:28,323 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:53:28,323 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:53:28,324 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:53:28,340 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 14:53:28,340 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:53:31,063 :: INFO :: -----------
+2021-10-19 14:53:31,063 :: INFO :: The bot is ready.
+2021-10-19 14:53:31,064 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:53:31,064 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:53:31,064 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:53:31,064 :: INFO :: 8 cogs are loaded
+2021-10-19 14:53:31,064 :: INFO :: -----------
+2021-10-19 14:53:31,064 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:53:31,064 :: INFO :: dOGbot JSON API listening
+2021-10-19 14:53:40,375 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -twitter
+2021-10-19 14:54:12,043 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 14:54:12,560 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:54:12,571 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:54:12,571 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:54:12,571 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:54:12,572 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:54:12,573 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:54:12,584 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 14:54:12,584 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:54:15,294 :: INFO :: -----------
+2021-10-19 14:54:15,294 :: INFO :: The bot is ready.
+2021-10-19 14:54:15,294 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:54:15,294 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:54:15,294 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:54:15,294 :: INFO :: 8 cogs are loaded
+2021-10-19 14:54:15,294 :: INFO :: -----------
+2021-10-19 14:54:15,294 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:54:15,294 :: INFO :: dOGbot JSON API listening
+2021-10-19 14:54:15,999 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -youtube
+2021-10-19 14:54:38,022 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 14:54:38,677 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:54:38,687 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:54:38,688 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:54:38,688 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:54:38,689 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:54:38,689 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:54:38,700 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 14:54:38,701 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:54:41,367 :: INFO :: -----------
+2021-10-19 14:54:41,368 :: INFO :: The bot is ready.
+2021-10-19 14:54:41,368 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:54:41,368 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:54:41,368 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:54:41,368 :: INFO :: 8 cogs are loaded
+2021-10-19 14:54:41,368 :: INFO :: -----------
+2021-10-19 14:54:41,368 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:54:41,368 :: INFO :: dOGbot JSON API listening
+2021-10-19 14:54:47,646 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -twitter
+2021-10-19 14:54:53,422 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 14:54:54,104 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:54:54,113 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:54:54,114 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:54:54,114 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:54:54,114 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:54:54,115 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:54:54,126 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 14:54:54,126 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:54:56,703 :: INFO :: -----------
+2021-10-19 14:54:56,703 :: INFO :: The bot is ready.
+2021-10-19 14:54:56,703 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:54:56,703 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:54:56,703 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:54:56,703 :: INFO :: 8 cogs are loaded
+2021-10-19 14:54:56,703 :: INFO :: -----------
+2021-10-19 14:54:56,703 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:54:56,703 :: INFO :: dOGbot JSON API listening
+2021-10-19 14:54:58,382 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -twitter
+2021-10-19 14:55:57,950 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 14:55:58,472 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:55:58,481 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:55:58,482 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:55:58,482 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:55:58,483 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:55:58,483 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:55:58,494 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 14:55:58,494 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:56:01,142 :: INFO :: -----------
+2021-10-19 14:56:01,142 :: INFO :: The bot is ready.
+2021-10-19 14:56:01,142 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:56:01,142 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:56:01,142 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:56:01,142 :: INFO :: 8 cogs are loaded
+2021-10-19 14:56:01,142 :: INFO :: -----------
+2021-10-19 14:56:01,142 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:56:01,143 :: INFO :: dOGbot JSON API listening
+2021-10-19 14:56:03,635 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -twitter
+2021-10-19 14:56:49,234 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 14:56:49,739 :: DEBUG :: > jishaku loaded!
+2021-10-19 14:56:49,749 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 14:56:49,749 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 14:56:49,749 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 14:56:49,751 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 14:56:49,752 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 14:56:49,764 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 14:56:49,764 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 14:56:52,372 :: INFO :: -----------
+2021-10-19 14:56:52,372 :: INFO :: The bot is ready.
+2021-10-19 14:56:52,373 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 14:56:52,373 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 14:56:52,373 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 14:56:52,373 :: INFO :: 8 cogs are loaded
+2021-10-19 14:56:52,373 :: INFO :: -----------
+2021-10-19 14:56:52,373 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 14:56:52,373 :: INFO :: dOGbot JSON API listening
+2021-10-19 14:56:59,734 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -twitter
+2021-10-19 14:57:06,858 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -youtube
+2021-10-19 14:57:12,833 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -twitch
+2021-10-19 14:57:26,053 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -kuki
+2021-10-19 14:57:32,203 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -ping
+2021-10-19 15:00:01,051 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 15:23:41,321 :: DEBUG :: > jishaku loaded!
+2021-10-19 15:23:41,330 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 15:23:41,331 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 15:23:41,331 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 15:23:41,332 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 15:23:41,332 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 15:23:41,343 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 15:23:41,343 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 15:23:44,006 :: INFO :: -----------
+2021-10-19 15:23:44,007 :: INFO :: The bot is ready.
+2021-10-19 15:23:44,007 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 15:23:44,007 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 15:23:44,007 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 15:23:44,007 :: INFO :: 8 cogs are loaded
+2021-10-19 15:23:44,007 :: INFO :: -----------
+2021-10-19 15:23:44,007 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:23:44,007 :: INFO :: dOGbot JSON API listening
+2021-10-19 15:26:01,448 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 15:26:01,983 :: DEBUG :: > jishaku loaded!
+2021-10-19 15:26:01,993 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 15:26:01,994 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 15:26:01,994 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 15:26:01,994 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 15:26:01,995 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 15:26:02,006 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 15:26:02,006 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 15:26:04,631 :: INFO :: -----------
+2021-10-19 15:26:04,631 :: INFO :: The bot is ready.
+2021-10-19 15:26:04,631 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 15:26:04,631 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 15:26:04,631 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 15:26:04,631 :: INFO :: 8 cogs are loaded
+2021-10-19 15:26:04,631 :: INFO :: -----------
+2021-10-19 15:26:04,632 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:26:04,632 :: INFO :: dOGbot JSON API listening
+2021-10-19 15:26:08,347 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -ping
+2021-10-19 15:26:08,575 :: DEBUG :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> Error during processing: Command raised an exception: AttributeError: 'Embed' object has no attribute 'addField' (CommandInvokeError("Command raised an exception: AttributeError: 'Embed' object has no attribute 'addField'"))
+2021-10-19 15:26:08,576 :: ERROR :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 85, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/run/media/hydro/D/Code/DSBOTS/dOGbot/cogs/utility.py", line 21, in ping
+    embed.addField(name="API Ping", value=time_delta, inline=False)
+AttributeError: 'Embed' object has no attribute 'addField'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 939, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 863, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/hydro/.local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 94, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Embed' object has no attribute 'addField'
+
+2021-10-19 15:26:57,981 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 15:26:58,504 :: DEBUG :: > jishaku loaded!
+2021-10-19 15:26:58,514 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 15:26:58,514 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 15:26:58,514 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 15:26:58,515 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 15:26:58,516 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 15:26:58,526 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 15:26:58,527 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 15:27:01,022 :: INFO :: -----------
+2021-10-19 15:27:01,022 :: INFO :: The bot is ready.
+2021-10-19 15:27:01,023 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 15:27:01,023 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 15:27:01,023 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 15:27:01,023 :: INFO :: 8 cogs are loaded
+2021-10-19 15:27:01,023 :: INFO :: -----------
+2021-10-19 15:27:01,023 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:27:01,023 :: INFO :: dOGbot JSON API listening
+2021-10-19 15:27:02,781 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -ping
+2021-10-19 15:28:25,295 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 15:28:25,812 :: DEBUG :: > jishaku loaded!
+2021-10-19 15:28:25,822 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 15:28:25,822 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 15:28:25,822 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 15:28:25,823 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 15:28:25,824 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 15:28:25,834 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 15:28:25,834 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 15:28:28,543 :: INFO :: -----------
+2021-10-19 15:28:28,543 :: INFO :: The bot is ready.
+2021-10-19 15:28:28,544 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 15:28:28,544 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 15:28:28,544 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 15:28:28,544 :: INFO :: 8 cogs are loaded
+2021-10-19 15:28:28,544 :: INFO :: -----------
+2021-10-19 15:28:28,544 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:28:28,544 :: INFO :: dOGbot JSON API listening
+2021-10-19 15:28:30,257 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -ping
+2021-10-19 15:29:05,606 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 15:29:06,115 :: DEBUG :: > jishaku loaded!
+2021-10-19 15:29:06,124 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 15:29:06,125 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 15:29:06,125 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 15:29:06,126 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 15:29:06,126 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 15:29:06,137 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 15:29:06,137 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 15:29:08,742 :: INFO :: -----------
+2021-10-19 15:29:08,743 :: INFO :: The bot is ready.
+2021-10-19 15:29:08,743 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 15:29:08,743 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 15:29:08,743 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 15:29:08,743 :: INFO :: 8 cogs are loaded
+2021-10-19 15:29:08,743 :: INFO :: -----------
+2021-10-19 15:29:08,743 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:29:08,743 :: INFO :: dOGbot JSON API listening
+2021-10-19 15:29:10,595 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -ping
+2021-10-19 15:29:54,854 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 15:29:55,376 :: DEBUG :: > jishaku loaded!
+2021-10-19 15:29:55,387 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 15:29:55,387 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 15:29:55,387 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 15:29:55,388 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 15:29:55,389 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 15:29:55,400 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 15:29:55,400 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 15:29:57,996 :: INFO :: -----------
+2021-10-19 15:29:57,996 :: INFO :: The bot is ready.
+2021-10-19 15:29:57,997 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 15:29:57,997 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 15:29:57,997 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 15:29:57,997 :: INFO :: 8 cogs are loaded
+2021-10-19 15:29:57,997 :: INFO :: -----------
+2021-10-19 15:29:57,997 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:29:57,997 :: INFO :: dOGbot JSON API listening
+2021-10-19 15:29:59,698 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -ping
+2021-10-19 15:30:40,743 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 15:30:41,233 :: DEBUG :: > jishaku loaded!
+2021-10-19 15:30:41,242 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 15:30:41,243 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 15:30:41,243 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 15:30:41,244 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 15:30:41,244 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 15:30:41,255 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 15:30:41,255 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 15:30:43,872 :: INFO :: -----------
+2021-10-19 15:30:43,872 :: INFO :: The bot is ready.
+2021-10-19 15:30:43,872 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 15:30:43,873 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 15:30:43,873 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 15:30:43,873 :: INFO :: 8 cogs are loaded
+2021-10-19 15:30:43,873 :: INFO :: -----------
+2021-10-19 15:30:43,873 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:30:43,873 :: INFO :: dOGbot JSON API listening
+2021-10-19 15:30:45,962 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -ping
+2021-10-19 15:45:43,907 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:47:02,358 :: INFO :: dOGbot JSON API is shutting down...
+2021-10-19 15:47:02,882 :: DEBUG :: > jishaku loaded!
+2021-10-19 15:47:02,892 :: DEBUG :: > cogs.error_handling loaded!
+2021-10-19 15:47:02,892 :: DEBUG :: > cogs.background_loop loaded!
+2021-10-19 15:47:02,893 :: DEBUG :: > cogs.support_server_commands loaded!
+2021-10-19 15:47:02,893 :: DEBUG :: > cogs.database_commands loaded!
+2021-10-19 15:47:02,894 :: DEBUG :: > cogs.utility loaded!
+2021-10-19 15:47:02,905 :: DEBUG :: > cogs.rest_api loaded!
+2021-10-19 15:47:02,905 :: DEBUG :: > cogs.fun loaded!
+2021-10-19 15:47:05,512 :: INFO :: -----------
+2021-10-19 15:47:05,512 :: INFO :: The bot is ready.
+2021-10-19 15:47:05,512 :: INFO :: Logged in as dOGbot (807690326700458005).
+2021-10-19 15:47:05,512 :: INFO :: I see 3 guilds, and 1 members.
+2021-10-19 15:47:05,513 :: INFO :: To invite your bot to your server, use the following link: https://discordapp.com/api/oauth2/authorize?client_id=807690326700458005&scope=bot&permissions=0
+2021-10-19 15:47:05,513 :: INFO :: 8 cogs are loaded
+2021-10-19 15:47:05,513 :: INFO :: -----------
+2021-10-19 15:47:05,513 :: WARNING :: The status channel for the support server command is configured improperly.
+2021-10-19 15:47:05,513 :: INFO :: dOGbot JSON API listening
+2021-10-19 15:47:09,903 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -version
+2021-10-19 15:49:09,521 :: INFO :: 772889538300608512 - #『🤖』cmds :: <dOGbone#0001> -help
+2021-10-19 15:49:13,102 :: INFO :: 772889538300608512 - #『🤖』cmds :: <dOGbone#0001> -youtube
+2021-10-19 15:49:17,398 :: INFO :: 772889538300608512 - #『🤖』cmds :: <dOGbone#0001> -twitch
+2021-10-19 15:49:20,694 :: INFO :: 772889538300608512 - #『🤖』cmds :: <dOGbone#0001> -twitter
+2021-10-19 15:49:47,338 :: INFO :: 772889538300608512 - #『🤖』cmds :: <dOGbone#0001> -kuki
+2021-10-19 15:49:57,547 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -ping
+2021-10-19 15:50:06,400 :: INFO :: 772889538300608512 - #『🤖』cmds :: <dOGbone#0001> -ping
+2021-10-19 15:51:34,031 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -version
+2021-10-19 15:54:37,204 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -jsk reload cogs.utility
+2021-10-19 15:54:44,049 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -credits
+2021-10-19 15:55:41,302 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -jsk reload cogs.utility
+2021-10-19 15:55:47,316 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -version
+2021-10-19 15:55:53,330 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -credits
+2021-10-19 15:57:57,784 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -jsk reload cogs.fun
+2021-10-19 15:58:04,422 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -kuki
+2021-10-19 15:58:12,397 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -kuki @dOGbone
+2021-10-19 15:58:47,172 :: INFO :: 772889538300608512 - #『🤖』cmds :: <dOGbone#0001> -kuki @dOGbot
+2021-10-19 15:58:59,487 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -jsk reload cogs.fun
+2021-10-19 15:59:04,071 :: INFO :: 772889538300608512 - #『🤖』cmds :: <dOGbone#0001> -kuki @hydrostaticcog for being so awesome <3
+2021-10-19 15:59:06,525 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -kuki @dOGbot
+2021-10-19 15:59:29,077 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -jsk reload cogs.fun
+2021-10-19 15:59:35,815 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -help
+2021-10-19 15:59:55,103 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -kuki @dOGbone
+2021-10-19 16:01:41,364 :: INFO :: 772889538300608512 - #『🤖』cmds :: <hydrostaticcog#4886> -jsk git commit -am "revamp :D"
