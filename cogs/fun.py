@@ -18,6 +18,8 @@ class Fun(Cog):
         Get/Give a free cookie!
         """
         if recipient:
+            if recipient == ctx.author:
+                await ctx.send(f"{recipient.mention}, You dont get a kuki you selfish brat!")
             await ctx.send(f"{recipient.mention}, here is a <:Kuki:823597497997328416> from {ctx.author.mention}")
         else:
             await ctx.send(f"{ctx.author.mention}, here you go! <:Kuki:823597497997328416>")
