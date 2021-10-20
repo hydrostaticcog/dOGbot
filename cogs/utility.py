@@ -19,7 +19,6 @@ class Utils(Cog):
         """
         Returns the latency of bot - Discord connection
         """
-        await ctx.message.delete()
         t_1 = time.perf_counter()
         await ctx.trigger_typing()
         t_2 = time.perf_counter()
@@ -29,7 +28,7 @@ class Utils(Cog):
         embed = discord.Embed(title=":ping_pong: dOGbot Ping!", color=discord.Color.orange())
         embed.add_field(name="API Ping", value=ping, inline=False)
         embed.add_field(name="WS Latency", value=latency)
-        embed.set_footer(text="Super high ping? Contact hydrostaticcog#4886")
+        embed.set_footer(text=f"Current Bot Version: v{release}")
         await ctx.send(embed=embed)
 
     @commands.command()
@@ -37,22 +36,23 @@ class Utils(Cog):
         """
         Check out dOGbone's Twitter!
         """
-        await ctx.send("<:Twitter:823582218332143666> Go check out dOGbone's Twitter! <https://twitter.com/dOGbon32>")
+        await ctx.reply("<:Twitter:823582218332143666> Go check out dOGbone's Twitter! <https://twitter.com/dOGbon32>")
 
     @commands.command()
     async def youtube(self, ctx: MyContext):
         """
         Check out dOGbone's Youtube channel!
         """
-        await ctx.send(
-            "<:Youtube:823582109959979028> Go check out dOGbone's Youtube channel! <https://www.youtube.com/channel/UCTDV8aurw0iQRjSBqw7aEEw>")
+        await ctx.reply(
+            "<:Youtube:823582109959979028> Go check out dOGbone's Youtube channel! "
+            "<https://www.youtube.com/channel/UCTDV8aurw0iQRjSBqw7aEEw>")
 
     @commands.command()
     async def twitch(self, ctx: MyContext):
         """
         Check out dOGbone's Twitch channel!
         """
-        await ctx.send(
+        await ctx.reply(
             "<:Twitch:823582166231416884> Go check out dOGbone's Twitch channel! <https://www.twitch.tv/dogbon32>")
 
     @commands.command()
@@ -82,7 +82,9 @@ class Utils(Cog):
         hydro_mention: str = hydro.mention
         dog_mention: str = dog.mention
         ry_mention: str = ry.mention
-        embed = discord.Embed(title="dOGbot Credits", color=discord.Color.orange())
+        embed = discord.Embed(title="dOGbot Credits", description="All the users that devoted time, resources, etc. to"
+                                                                  " the development/growth of dOGbot",
+                              color=discord.Color.orange())
         embed.add_field(name="Developer", value=hydro_mention)
         embed.add_field(name="Developed For", value=dog_mention)
         embed.add_field(name="Legacy Developer", value=ry_mention)

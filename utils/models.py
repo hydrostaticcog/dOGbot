@@ -9,6 +9,7 @@ from tortoise.models import Model
 
 # TODO : https://github.com/long2ice/aerich
 
+
 class DiscordGuild(Model):
     id = fields.IntField(pk=True)
     discord_id = fields.BigIntField(index=True)
@@ -77,6 +78,7 @@ class DiscordMember(Model):
     id = fields.IntField(pk=True)
     guild: DiscordGuild = fields.ForeignKeyField('models.DiscordGuild')
     user: DiscordUser = fields.ForeignKeyField('models.DiscordUser')
+    cookies = fields.IntField(default=0)
 
     access_level = fields.IntEnumField(enum_type=AccessLevel, default=AccessLevel.DEFAULT)
 

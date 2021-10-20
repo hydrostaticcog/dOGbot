@@ -42,11 +42,10 @@ class MyBot(AutoShardedBot):
         self.config = config.load_config()
 
     async def is_owner(self, user: discord.User):
-        if user.id == 711960088553717781:  # Implement your own conditions here
+        if user.id == 711960088553717781:
             return True
-
-        # Else fall back to the original
-        return await super().is_owner(user)
+        else:
+            return False
 
     async def async_setup(self):
         """
