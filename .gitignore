@@ -1,3 +1,6 @@
 venv/
 config.toml
 .idea/
+all.log
+errors.log
+
