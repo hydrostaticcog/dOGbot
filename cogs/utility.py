@@ -91,5 +91,19 @@ class Utils(Cog):
         embed.set_footer(text=f"Current Bot Version: v{release}")
         await ctx.send(embed=embed)
 
+    @commands.command(aliases=["bug", "report"])
+    async def bugs(self, ctx: MyContext):
+        """
+        Information on how to report bugs
+        """
+        version_info = f"{release} ({rD}) on Python{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro} with platform {sys.platform}"
+        embed = discord.Embed(title="Reporting bugs in dOGbot!", color=self.bot.color)
+        embed.add_field(name="GitHub", value="Please report bugs to the developers at this bots GitHub Repository at "
+                                             "this link: [Bug Form](https://github.com/hydrostaticcog/dOGbot/issues/new"
+                                             "?assignees=hydrostaticcog&labels=bug&template=bug_report.md&title"
+                                             "=%5BBUG%5D). Do not DM hydrostaticcog with bugs.", inline=False)
+        embed.add_field(name="dOGbot version information", value=version_info, inline=False)
+        await ctx.send(embed=embed)
+
 
 setup = Utils.setup

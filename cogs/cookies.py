@@ -20,6 +20,7 @@ class CookieCog(Cog):
     async def give_cookies(self, message):
         db_user = await get_from_db(message.author)
         cookies_tbg = random.randint(1, 5)
+        self.bot.logger.debug(f"[LEVELING] - Gave {message.author} {cookies_tbg} cookies")
         db_user.cookies_avail = db_user.cookies_avail + cookies_tbg
         await db_user.save()
 
