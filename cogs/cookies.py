@@ -45,7 +45,7 @@ class CookieCog(Cog):
         Get/Give a cookie!
         """
         if recipient == ctx.author:
-            await ctx.send(f"{recipient.mention}, You do not get a kuki you selfish brat!")
+            await ctx.send(f"{recipient.mention}, You cannot give yourself cookies you silly goose!")
             return
         db_recip = await get_from_db(recipient)
         db_giv = await get_from_db(ctx.author)
