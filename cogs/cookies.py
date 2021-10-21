@@ -87,7 +87,7 @@ class CookieCog(Cog):
     @commands.command(aliases=["lb", "leader"])
     async def leaderboard(self, ctx: MyContext):
         """
-        Collects and displays the 3 users with the most cookies
+        Collects and displays the 10 users with the most cookies
         """
         board = []
         for m in ctx.guild.members:
