@@ -20,9 +20,10 @@ class CookieCog(Cog):
     async def give_cookies(self, message):
         cookies_tbg = random.randint(1, 6)
         db_user = await get_from_db(message.author)
-        db_user.cookies_avail = db_user.cookies_avail + cookies_tbg
+        og_cookies = db_user.cookies_avail
+        db_user.cookies_avail = og_cookies + cookies_tbg
         await db_user.save()
-        self.bot.logger.debug(f"[LEVELING] - Gave {message.author} {cookies_tbg} cookies")
+        self.bot.logger.debug(f"[LEVELING] - Gave {message.author} {cookies_tbg} cookies. Had {og_cookies}, added {cookies_tbg}. Now has {db_user.cookies_avail}")
 
     async def check_level(self, message):
         db_user = await get_from_db(message.author)
