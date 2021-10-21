@@ -13,16 +13,16 @@ class CookieCog(Cog):
     async def on_message(self, message):
         if not message.author.bot:
             ri = random.randint(1, 100)
-            if ri >= 80:
+            if ri >= 75:
                 await self.give_cookies(message)
                 await self.check_level(message)
 
     async def give_cookies(self, message):
+        cookies_tbg = random.randint(1, 6)
         db_user = await get_from_db(message.author)
-        cookies_tbg = random.randint(1, 5)
-        self.bot.logger.debug(f"[LEVELING] - Gave {message.author} {cookies_tbg} cookies")
         db_user.cookies_avail = db_user.cookies_avail + cookies_tbg
         await db_user.save()
+        self.bot.logger.debug(f"[LEVELING] - Gave {message.author} {cookies_tbg} cookies")
 
     async def check_level(self, message):
         db_user = await get_from_db(message.author)
