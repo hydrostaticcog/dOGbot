@@ -25,7 +25,7 @@ class Utils(Cog):
         time_delta = round((t_2 - t_1) * 1000)
         ping = str(time_delta) + "ms"
         latency = str(round(self.bot.latency * 1000)) + "ms"
-        embed = discord.Embed(title=":ping_pong: dOGbot Ping!", color=discord.Color.orange())
+        embed = discord.Embed(title=":ping_pong: dOGbot Ping!", color=self.bot.color)
         embed.add_field(name="API Ping", value=ping, inline=False)
         embed.add_field(name="WS Latency", value=latency)
         embed.set_footer(text=f"Current Bot Version: v{release}")
@@ -61,7 +61,7 @@ class Utils(Cog):
         Provides information about the current version of the bot, as well as a location to file formal bug
         reports/feature requests
         """
-        embed = discord.Embed(title="dOGbot Version Information", color=discord.Color.orange())
+        embed = discord.Embed(title="dOGbot Version Information", color=self.bot.color)
         embed.add_field(name="Version", value=release, inline=True)
         embed.add_field(name="Release Date", value=rD, inline=True)
         embed.add_field(name="Have Issues or Features you want?",
@@ -84,7 +84,7 @@ class Utils(Cog):
         ry_mention: str = ry.mention
         embed = discord.Embed(title="dOGbot Credits", description="All the users that devoted time, resources, etc. to"
                                                                   " the development/growth of dOGbot",
-                              color=discord.Color.orange())
+                              color=self.bot.color)
         embed.add_field(name="Developer", value=hydro_mention)
         embed.add_field(name="Developed For", value=dog_mention)
         embed.add_field(name="Legacy Developer", value=ry_mention)

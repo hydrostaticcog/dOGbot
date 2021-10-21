@@ -26,7 +26,7 @@ class MyBot(AutoShardedBot):
                          case_insensitive=self.config["bot"]["commands_are_case_insensitive"], **kwargs)
         self.commands_used = collections.Counter()
         self.uptime = datetime.datetime.utcnow()
-        self.color = discord.Color.orange()
+        self.color = 0xFF8234
         self.shards_ready = set()
         self._client_session: Optional[aiohttp.ClientSession] = None
         asyncio.ensure_future(self.async_setup())
