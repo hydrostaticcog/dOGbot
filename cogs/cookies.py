@@ -15,7 +15,7 @@ class CookieCog(Cog):
             ri = random.randint(1, 100)
             if ri >= 75:
                 await self.give_cookies(message)
-                await self.check_level(message)
+                await self.check_level(message.author, message.channel)
 
     async def give_cookies(self, message):
         cookies_tbg = random.randint(1, 6)
@@ -25,15 +25,22 @@ class CookieCog(Cog):
         await db_user.save()
         self.bot.logger.debug(f"[LEVELING] - Gave {message.author} {cookies_tbg} cookies. Had {og_cookies}, added {cookies_tbg}. Now has {db_user.cookies}")
 
-    async def check_level(self, message):
-        db_user = await get_from_db(message.author)
+    async def check_level(self, user, ctx):
+        db_user = await get_from_db(user)
         next_level = db_user.level + 1
         needed_to_advance = db_user.last_level + next_level * 20
         if db_user.cookies >= needed_to_advance:
             db_user.level += 1
             db_user.last_level = needed_to_advance
-            await message.channel.send(
-                f"{message.author.mention}, Congratulations! You have achieved level {next_level}"
+            await ctx.send(
+                f"{user.mention}, Congratulations! You have achieved level {next_level}"
+                f"!\nYou currently have {db_user.cookies} cookies.")
+            await db_user.save()
+        elif db_user.cookies < db_user.last_level:
+            db_user.level -= 1
+            db_user.last_level -= 20
+            await ctx.send(
+                f"{user.mention}, Uh oh! You have lost a level! Your new level is {db_user.level}"
                 f"!\nYou currently have {db_user.cookies} cookies.")
             await db_user.save()
         else:
@@ -55,6 +62,8 @@ class CookieCog(Cog):
             await db_recip.save()
             await db_giv.save()
             await ctx.reply(f"Gave {recipient.mention} {amount} cookie(s)!")
+            await self.check_level(ctx.author, ctx)
+            await self.check_level(recipient, ctx)
             return
         else:
             await ctx.reply(f"You don't have enough cookies to give {recipient.mention} {amount} cookie(s)!")
