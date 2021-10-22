@@ -38,7 +38,7 @@ class CookieCog(Cog):
             await db_user.save()
         elif db_user.cookies < db_user.last_level:
             db_user.level -= 1
-            db_user.last_level -= 20
+            db_user.last_level -= db_user.level * 20
             await ctx.send(
                 f"{user.mention}, Uh oh! You have lost a level! Your new level is {db_user.level}"
                 f"!\nYou currently have {db_user.cookies} cookies.")
