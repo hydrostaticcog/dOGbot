@@ -50,7 +50,7 @@ class CookieCog(Cog):
         db_recip = await get_from_db(recipient)
         db_giv = await get_from_db(ctx.author)
         if db_giv.cookies - amount > 0:
-            db_giv.cookie -= amount
+            db_giv.cookies -= amount
             db_recip.cookies += amount
             await db_recip.save()
             await db_giv.save()
