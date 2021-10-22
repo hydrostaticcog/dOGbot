@@ -68,7 +68,7 @@ class CookieCog(Cog):
             user = ctx.author
         db_user = await get_from_db(user)
         cookies = db_user.cookies
-        level = f"{db_user.level}"
+        level = db_user.level
         nxl = db_user.level + 1
         nxl_thresh = level * 20
         progress = f"{cookies - db_user.last_level}/{nxl_thresh} to Level {nxl}"
