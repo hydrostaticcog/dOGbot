@@ -70,7 +70,7 @@ class CookieCog(Cog):
         cookies = db_user.cookies
         level = f"{db_user.level}"
         nxl = db_user.level + 1
-        nxl_thresh = db_user.last_level + int(level) * 20
+        nxl_thresh = level * 20
         progress = f"{cookies - db_user.last_level}/{nxl_thresh} to Level {nxl}"
         embed = discord.Embed(title=f"{user.name}'s Inventory", color=self.bot.color)
         embed.add_field(name="<:Kuki:823597497997328416> Cookies", value=cookies)
