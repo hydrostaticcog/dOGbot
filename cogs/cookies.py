@@ -28,7 +28,7 @@ class CookieCog(Cog):
     async def check_level(self, message):
         db_user = await get_from_db(message.author)
         next_level = db_user.level + 1
-        needed_to_advance = db_user.last_level + db_user.level * 20
+        needed_to_advance = db_user.last_level + next_level * 20
         if db_user.cookies >= needed_to_advance:
             db_user.level += 1
             db_user.last_level = needed_to_advance
@@ -70,7 +70,7 @@ class CookieCog(Cog):
         cookies = db_user.cookies
         level = db_user.level
         nxl = db_user.level + 1
-        nxl_thresh = level * 20
+        nxl_thresh = nxl * 20
         progress = f"{cookies - db_user.last_level}/{nxl_thresh} to Level {nxl}"
         embed = discord.Embed(title=f"{user.name}'s Inventory", color=self.bot.color)
         embed.add_field(name="<:Kuki:823597497997328416> Cookies", value=cookies)
