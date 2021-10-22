@@ -78,8 +78,8 @@ class DiscordMember(Model):
     id = fields.IntField(pk=True)
     guild: DiscordGuild = fields.ForeignKeyField('models.DiscordGuild')
     user: DiscordUser = fields.ForeignKeyField('models.DiscordUser')
-    cookies_avail = fields.IntField(default=0)
-    cookie_jar = fields.IntField(default=0)
+    last_level = fields.IntField(default=0)
+    cookies = fields.IntField(default=0)
     level = fields.IntField(default=1)
 
     access_level = fields.IntEnumField(enum_type=AccessLevel, default=AccessLevel.DEFAULT)

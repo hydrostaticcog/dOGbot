@@ -20,22 +20,21 @@ class CookieCog(Cog):
     async def give_cookies(self, message):
         cookies_tbg = random.randint(1, 6)
         db_user = await get_from_db(message.author)
-        og_cookies = db_user.cookies_avail
-        db_user.cookies_avail = og_cookies + cookies_tbg
+        og_cookies = db_user.cookies
+        db_user.cookies = og_cookies + cookies_tbg
         await db_user.save()
-        self.bot.logger.debug(f"[LEVELING] - Gave {message.author} {cookies_tbg} cookies. Had {og_cookies}, added {cookies_tbg}. Now has {db_user.cookies_avail}")
+        self.bot.logger.debug(f"[LEVELING] - Gave {message.author} {cookies_tbg} cookies. Had {og_cookies}, added {cookies_tbg}. Now has {db_user.cookies}")
 
     async def check_level(self, message):
         db_user = await get_from_db(message.author)
         next_level = db_user.level + 1
-        needed_to_advance = next_level * 20
-        if db_user.cookies_avail >= needed_to_advance:
-            db_user.cookie_jar += db_user.cookies_avail
-            db_user.cookies_avail = 0
+        needed_to_advance = db_user.last_level + db_user.level * 20
+        if db_user.cookies >= needed_to_advance:
             db_user.level += 1
+            db_user.last_level = needed_to_advance
             await message.channel.send(
                 f"{message.author.mention}, Congratulations! You have achieved level {next_level}"
-                f"!\nYou currently have {db_user.cookie_jar} cookies.")
+                f"!\nYou currently have {db_user.cookies} cookies.")
             await db_user.save()
         else:
             return
@@ -50,16 +49,9 @@ class CookieCog(Cog):
             return
         db_recip = await get_from_db(recipient)
         db_giv = await get_from_db(ctx.author)
-        if db_giv.cookie_jar - amount > 0:
-            db_giv.cookie_jar -= amount
-            db_recip.cookies_avail += amount
-            await db_recip.save()
-            await db_giv.save()
-            await ctx.reply(f"Gave {recipient.mention} {amount} cookie(s)!")
-            return
-        if db_giv.cookie_jar - amount > 0:
-            db_giv.cookies_avail -= amount
-            db_recip.cookies_avail += amount
+        if db_giv.cookies - amount > 0:
+            db_giv.cookie -= amount
+            db_recip.cookies += amount
             await db_recip.save()
             await db_giv.save()
             await ctx.reply(f"Gave {recipient.mention} {amount} cookie(s)!")
@@ -75,10 +67,11 @@ class CookieCog(Cog):
         if user is None:
             user = ctx.author
         db_user = await get_from_db(user)
-        cookies = db_user.cookies_avail + db_user.cookie_jar
+        cookies = db_user.cookies
         level = f"{db_user.level}"
         nxl = db_user.level + 1
-        progress = f"{db_user.cookies_avail}/{nxl * 20} to Level {nxl}"
+        nxl_thresh = db_user.last_level + int(level) * 20
+        progress = f"{cookies - db_user.last_level}/{nxl_thresh} to Level {nxl}"
         embed = discord.Embed(title=f"{user.name}'s Inventory", color=self.bot.color)
         embed.add_field(name="<:Kuki:823597497997328416> Cookies", value=cookies)
         embed.add_field(name="Level", value=level, inline=False)
@@ -93,7 +86,7 @@ class CookieCog(Cog):
         board = []
         for m in ctx.guild.members:
             db = await get_from_db(m)
-            board.append([m.name, db.level, db.cookie_jar + db.cookies_avail])
+            board.append([m.name, db.level, db.cookies])
         board.sort(reverse=True, key=self.sort_key2)
         embed = discord.Embed(title=f"{ctx.guild.name}'s Leaderboard", description="Top 10 users who have the most "
                                                                                    "cookies", color=self.bot.color)
