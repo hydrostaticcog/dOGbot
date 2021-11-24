@@ -21,12 +21,11 @@ class MyBot(AutoShardedBot):
         self.config: dict = {}
         self.reload_config()
         # noinspection PyArgumentList
-        activity = discord.Game(self.config["bot"]["playing"])
-        super().__init__(*args, command_prefix=get_prefix, activity=activity,
+        super().__init__(*args, command_prefix=get_prefix,
                          case_insensitive=self.config["bot"]["commands_are_case_insensitive"], **kwargs)
         self.commands_used = collections.Counter()
         self.uptime = datetime.datetime.utcnow()
-        self.color = discord.Color.orange()
+        self.color = 0xFF8234
         self.shards_ready = set()
         self._client_session: Optional[aiohttp.ClientSession] = None
         asyncio.ensure_future(self.async_setup())
@@ -79,6 +78,8 @@ class MyBot(AutoShardedBot):
         self.shards_ready = set()
 
     async def on_ready(self):
+        activity = discord.Game(self.config["bot"]["playing"])
+        await self.change_presence(status=discord.Status.idle, activity=activity)
         messages = ["-----------", f"The bot is ready.", f"Logged in as {self.user.name} ({self.user.id})."]
         total_members = len(self.users)
         messages.append(f"I see {len(self.guilds)} guilds, and {total_members} members.")
