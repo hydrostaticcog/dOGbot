@@ -6,6 +6,7 @@ from discord.ext import commands
 from utils.ctx_class import MyContext
 from utils.cog_class import Cog
 from utils.models import get_from_db
+from utils.embeds import leaderboard_embed
 
 
 class CookieCog(Cog):
@@ -95,20 +96,10 @@ class CookieCog(Cog):
         board = []
         for m in ctx.guild.members:
             db = await get_from_db(m)
-            board.append([m.name, db.level, db.cookies])
+            if db.cookies > 0:
+                board.append([m.name, db.level, db.cookies])
         board.sort(reverse=True, key=self.sort_key2)
-        embed = discord.Embed(title=f"{ctx.guild.name}'s Leaderboard", description="Top 10 users who have the most "
-                                                                                   "cookies", color=self.bot.color)
-        embed.add_field(name="First", value=board[0][0] + f" - Level {board[0][1]}", inline=False)
-        embed.add_field(name="Second", value=board[1][0] + f" - Level {board[1][1]}", inline=False)
-        embed.add_field(name="Third", value=board[2][0] + f" - Level {board[2][1]}", inline=False)
-        embed.add_field(name="Fourth", value=board[3][0] + f" - Level {board[3][1]}", inline=False)
-        embed.add_field(name="Fifth", value=board[4][0] + f" - Level {board[4][1]}", inline=False)
-        embed.add_field(name="Sixth", value=board[5][0] + f" - Level {board[5][1]}", inline=False)
-        embed.add_field(name="Seventh", value=board[6][0] + f" - Level {board[6][1]}", inline=False)
-        embed.add_field(name="Eighth", value=board[7][0] + f" - Level {board[7][1]}", inline=False)
-        embed.add_field(name="Ninth", value=board[8][0] + f" - Level {board[8][1]}", inline=False)
-        embed.add_field(name="Tenth", value=board[9][0] + f" - Level {board[9][1]}", inline=False)
+        embed = await leaderboard_embed(ctx=ctx, bot=self.bot, board=board)
         await ctx.send(embed=embed)
 
     def sort_key2(self, company):
