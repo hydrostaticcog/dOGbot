@@ -1,11 +1,8 @@
-import discord
 import random
-import time
 
 from discord.ext import commands
 from utils.ctx_class import MyContext
 from utils.cog_class import Cog
-from utils.models import get_from_db
 
 
 class Fun(Cog):
@@ -21,11 +18,12 @@ class Fun(Cog):
         """
         Flips a coin
         """
-        result = "Tails"
-        tf = random.randint(0, 1)
-        if tf == 1:
-            result = "Heads"
         await ctx.trigger_typing()
+        tf = bool(random.getrandbits(1))
+        if tf:
+            result = "Heads"
+        else:
+            result = "Tails"
         m = await ctx.reply(":coin: Flipping the coin...")
         await m.edit(content=f":coin: {result}!")
 

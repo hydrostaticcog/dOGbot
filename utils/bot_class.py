@@ -15,7 +15,7 @@ from utils.logger import FakeLogger
 from utils.models import get_from_db
 
 
-class MyBot(AutoShardedBot):
+class dOGbot(AutoShardedBot):
     def __init__(self, *args, **kwargs):
         self.logger = FakeLogger()
         self.config: dict = {}
@@ -95,7 +95,7 @@ class MyBot(AutoShardedBot):
             print(message)
 
 
-async def get_prefix(bot: MyBot, message: discord.Message):
+async def get_prefix(bot: dOGbot, message: discord.Message):
     forced_prefixes = bot.config["bot"]["prefixes"]
 
     if not message.guild:

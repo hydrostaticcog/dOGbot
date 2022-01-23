@@ -5,14 +5,14 @@ import typing
 import discord
 
 if typing.TYPE_CHECKING:
-    from utils.bot_class import MyBot
+    from utils.bot_class import dOGbot
 
 
 def escape_everything(str_to_escape: str):
     return discord.utils.escape_mentions(discord.utils.escape_markdown(str_to_escape))
 
 
-async def delete_messages_if_message_removed(bot: 'MyBot', watch_message: discord.Message,
+async def delete_messages_if_message_removed(bot: 'dOGbot', watch_message: discord.Message,
                                              message_to_delete: discord.Message):
     def check(message: discord.RawMessageDeleteEvent):
         return message.message_id == watch_message.id

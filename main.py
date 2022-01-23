@@ -4,7 +4,7 @@ import asyncio
 import discord
 import uvloop
 
-from utils.bot_class import MyBot
+from utils.bot_class import dOGbot
 from utils.config import load_config
 from utils.custom_help import EmbedHelpCommand
 from utils.models import init_db_connection
@@ -38,8 +38,8 @@ allowed_mentions = discord.AllowedMentions(
     users=True,
 )
 
-bot = MyBot(description=config["bot"]["description"], intents=intents, allowed_mentions=allowed_mentions,
-            help_command=EmbedHelpCommand(), )
+bot = dOGbot(description=config["bot"]["description"], intents=intents, allowed_mentions=allowed_mentions,
+             help_command=EmbedHelpCommand(), )
 
 for cog_name in config["cogs"]["cogs_to_load"]:
     try:

@@ -11,7 +11,7 @@ from utils.models import get_from_db
 from utils.translations import translate
 
 if typing.TYPE_CHECKING:
-    from utils.bot_class import MyBot
+    from utils.bot_class import dOGbot
 
 from utils.interaction import delete_messages_if_message_removed
 from utils.logger import LoggerConstant
@@ -20,7 +20,7 @@ from utils.logger import LoggerConstant
 class MyContext(commands.Context):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.bot: 'MyBot'
+        self.bot: 'dOGbot'
 
         # noinspection PyTypeChecker
         self.logger = LoggerConstant(self.bot.logger, self.guild, self.channel, self.author)
