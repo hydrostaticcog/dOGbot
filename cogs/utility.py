@@ -2,6 +2,7 @@ import discord
 import time
 import json
 import sys
+import requests
 
 from discord.ext import commands
 from utils.ctx_class import MyContext
@@ -104,6 +105,40 @@ class Utils(Cog):
                                              "=%5BBUG%5D). Do not DM hydrostaticcog with bugs.", inline=False)
         embed.add_field(name="dOGbot version information", value=version_info, inline=False)
         await ctx.send(embed=embed)
+
+    @commands.group()
+    async def smp(self, ctx: MyContext):
+        """
+        Check out the Dog SMP!
+        """
+        if not ctx.invoked_subcommand:
+            embed = discord.Embed(title="The Dog SMP!", color=self.bot.color, description="Join us on the Minecraft "
+                                                                                          "Server!")
+            embed.add_field(name="IP", value="`dog-smp.hydrostaticcog.me` Java/Bedrock (default ports)", inline=False)
+            embed.add_field(name="Web Map", value="`https://dog-smp.hydrostaticcog.me:8123`")
+            await ctx.send(embed=embed)
+
+    @smp.command()
+    async def ping(self, ctx: MyContext):
+        """
+        Checks the uptime of the SMP
+        """
+        resp = requests.get("https://api.mcsrvstat.us/2/dog-smp.hydrostaticcog.me")
+        is_online = resp.json()['online']
+        if is_online:
+            status = "Online"
+            emoji = ":green_circle:"
+        else:
+            status = "Offline"
+            emoji = ":red_circle:"
+        await ctx.send(f"{emoji} The Dog SMP is currently {status}")
+
+    @commands.command(aliases=["reddit", "r/dogsmp"])
+    async def subreddit(self, ctx: MyContext):
+        """
+        Provides information on the subreddit!
+        """
+        await ctx.send("<:Reddit:934847835462041651> Go check out the Dog SMP's subreddit! <https://dogsmp.reddit.com>")
 
 
 setup = Utils.setup
