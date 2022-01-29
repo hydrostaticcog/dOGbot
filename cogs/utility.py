@@ -119,17 +119,17 @@ class Utils(Cog):
             await ctx.send(embed=embed)
 
     @smp.command()
-    async def ping(self, ctx: MyContext):
+    async def status(self, ctx: MyContext):
         """
         Checks the uptime of the SMP
         """
         resp = requests.get("https://api.mcsrvstat.us/2/dog-smp.hydrostaticcog.me")
         is_online = resp.json()['online']
         if is_online:
-            status = "Online"
+            status = "online"
             emoji = ":green_circle:"
         else:
-            status = "Offline"
+            status = "offline"
             emoji = ":red_circle:"
         await ctx.send(f"{emoji} The Dog SMP is currently {status}")
 
