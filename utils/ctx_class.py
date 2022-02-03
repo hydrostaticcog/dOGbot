@@ -7,7 +7,7 @@ from discord import Message
 from discord.errors import InvalidArgument
 from discord.ext import commands
 
-from utils.models import get_from_db
+from utils.models import get_from_db_dobj
 from utils.translations import translate
 
 if typing.TYPE_CHECKING:
@@ -60,10 +60,10 @@ class MyContext(commands.Context):
 
     async def get_language_code(self):
         if self.guild:
-            db_guild = await get_from_db(self.guild)
+            db_guild = await get_from_db_dobj(self.guild)
             language = db_guild.language
         else:
-            db_user = await get_from_db(self.author, as_user=True)
+            db_user = await get_from_db_dobj(self.author, as_user=True)
             language = db_user.language
 
         return language

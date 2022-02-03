@@ -18,7 +18,7 @@ class Utils(Cog):
     @commands.command()
     async def ping(self, ctx: MyContext):
         """
-        Returns the latency of bot - Discord connection
+        Returns the latency of bot -> Discord connection
         """
         t_1 = time.perf_counter()
         await ctx.trigger_typing()

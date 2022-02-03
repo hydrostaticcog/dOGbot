@@ -8,7 +8,7 @@ from discord.utils import escape_markdown, escape_mentions
 
 from utils.cog_class import Cog
 from utils.ctx_class import MyContext
-from utils.models import get_from_db
+from utils.models import get_from_db_dobj
 
 
 class DatabaseCommands(Cog):
@@ -28,7 +28,7 @@ class DatabaseCommands(Cog):
         Note that some prefixes are global and can't be edited.
         """
         _ = await ctx.get_translate_function()
-        db_guild = await get_from_db(ctx.guild)
+        db_guild = await get_from_db_dobj(ctx.guild)
         if new_prefix:
             db_guild.prefix = new_prefix
         await db_guild.save()
@@ -47,7 +47,7 @@ class DatabaseCommands(Cog):
         Specify the server language as a 2/5 letters code. For example, if you live in France, you'd use fr or fr_FR.
         In Quebec, you could use fr_QC.
         """
-        db_guild = await get_from_db(ctx.guild)
+        db_guild = await get_from_db_dobj(ctx.guild)
         if language_code:
             db_guild.language = language_code
         await db_guild.save()

@@ -1,7 +1,7 @@
 [bot]
-prefixes = ["-", "d!"]
+prefixes = ["&", "d!"]
 description = """Bot for dOGbone!"""
-playing = "2.0.0"
+playing = "top sekret"
 commands_are_case_insensitive = true
 
 [database]
@@ -17,11 +17,11 @@ database = "dogbot"
 
 [auth.discord]
 # Your bot token. You can find it on the Bot page of the Developper portal
-token = "ODA3NjkwMzI2NzAwNDU4MDA1.YB7qPA.ETN7LPVHYUp8uV2Vm0N6kJ7gke8"
+token = "ODAxNDM4OTcyMjgyMTQyNzIx.YAgsNQ.MLpjQgcb7yPu3OZKTzyqOZpNoY8"
 
 [cogs]
 # Names of cogs to load. Usually cogs.file_name_without_py
-cogs_to_load = ['jishaku', 'cogs.error_handling', 'cogs.background_loop', 'cogs.support_server_commands', 'cogs.database_commands', 'cogs.utility', 'cogs.rest_api', "cogs.fun"]
+cogs_to_load = ['jishaku', 'cogs.moderation', 'cogs.error_handling', 'cogs.background_loop', 'cogs.support_server_commands', 'cogs.database_commands', 'cogs.utility', 'cogs.rest_api', "cogs.fun"]
 
 [cogs.SupportServerCommands]
 # That's the ID of your server where the command will be ran

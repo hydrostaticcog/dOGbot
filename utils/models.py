@@ -28,6 +28,24 @@ class DiscordGuild(Model):
         return f"<Guild name={self.name}>"
 
 
+class ModActions(Model):
+    id = fields.IntField(pk=True)
+    type = fields.TextField(null=True)
+    victim_id = fields.BigIntField(index=True, null=True)
+    issuer_id = fields.BigIntField(index=True, null=True)
+    guild_id = fields.BigIntField(index=True, null=True)
+    note = fields.TextField(null=True)
+
+    class Meta:
+        table = "actions"
+
+    def __str__(self):
+        return self.id
+
+    def __repr__(self):
+        return f"<Action id={self.id}>"
+
+
 class DiscordChannel(Model):
     id = fields.IntField(pk=True)
     guild = fields.ForeignKeyField('models.DiscordGuild')
@@ -59,7 +77,6 @@ class DiscordUser(Model):
     name = fields.TextField()
     discriminator = fields.CharField(4)
     last_modified = fields.DatetimeField(auto_now=True)
-    times_ran_example_command = fields.IntField(default=0)
 
     language = fields.CharField(6, default="en")
     access_level_override = fields.IntEnumField(enum_type=AccessLevel, default=AccessLevel.DEFAULT)
@@ -81,6 +98,7 @@ class DiscordMember(Model):
     last_level = fields.IntField(default=0)
     cookies = fields.IntField(default=0)
     level = fields.IntField(default=1)
+    warns = fields.IntField(index=True, default=0)
 
     access_level = fields.IntEnumField(enum_type=AccessLevel, default=AccessLevel.DEFAULT)
 
@@ -98,7 +116,15 @@ class DiscordMember(Model):
         return f"<Member user={self.user} guild={self.guild}>"
 
 
-async def get_from_db(discord_object, as_user=False):
+async def get_from_db_act(id: int):
+    db_obj = await ModActions.filter(id=id).first()
+    if not db_obj:
+        db_obj = ModActions(id=id)
+        await db_obj.save()
+    return db_obj
+
+
+async def get_from_db_dobj(discord_object, as_user=False):
     if isinstance(discord_object, discord.Guild):
         db_obj = await DiscordGuild.filter(discord_id=discord_object.id).first()
         if not db_obj:
@@ -109,7 +135,7 @@ async def get_from_db(discord_object, as_user=False):
         db_obj = await DiscordChannel.filter(discord_id=discord_object.id).first()
         if not db_obj:
             db_obj = DiscordChannel(discord_id=discord_object.id, name=discord_object.name,
-                                    guild=await get_from_db(discord_object.guild))
+                                    guild=await get_from_db_dobj(discord_object.guild))
             await db_obj.save()
         return db_obj
     elif isinstance(discord_object, discord.Member) and not as_user:
@@ -118,8 +144,8 @@ async def get_from_db(discord_object, as_user=False):
                                             first().\
                                             prefetch_related("user", "guild")
         if not db_obj:
-            db_obj = DiscordMember(guild=await get_from_db(discord_object.guild),
-                                   user=await get_from_db(discord_object, as_user=True))
+            db_obj = DiscordMember(guild=await get_from_db_dobj(discord_object.guild),
+                                   user=await get_from_db_dobj(discord_object, as_user=True))
             await db_obj.save()
         return db_obj
     elif isinstance(discord_object, discord.User) or isinstance(discord_object, discord.Member) and as_user:

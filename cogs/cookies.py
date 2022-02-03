@@ -5,7 +5,7 @@ import time
 from discord.ext import commands
 from utils.ctx_class import MyContext
 from utils.cog_class import Cog
-from utils.models import get_from_db
+from utils.models import get_from_db_dobj
 from utils.embeds import leaderboard_embed
 
 
@@ -20,14 +20,14 @@ class CookieCog(Cog):
 
     async def give_cookies(self, message):
         cookies_tbg = random.randint(1, 6)
-        db_user = await get_from_db(message.author)
+        db_user = await get_from_db_dobj(message.author)
         og_cookies = db_user.cookies
         db_user.cookies = og_cookies + cookies_tbg
         await db_user.save()
         self.bot.logger.debug(f"[LEVELING] - Gave {message.author} {cookies_tbg} cookies. Had {og_cookies}, added {cookies_tbg}. Now has {db_user.cookies}")
 
     async def check_level(self, user, ctx):
-        db_user = await get_from_db(user)
+        db_user = await get_from_db_dobj(user)
         next_level = db_user.level + 1
         needed_to_advance = db_user.last_level + next_level * 20
         if db_user.cookies >= needed_to_advance:
@@ -55,8 +55,8 @@ class CookieCog(Cog):
         if recipient == ctx.author:
             await ctx.send(f"{recipient.mention}, You cannot give yourself cookies you silly goose!")
             return
-        db_recip = await get_from_db(recipient)
-        db_giv = await get_from_db(ctx.author)
+        db_recip = await get_from_db_dobj(recipient)
+        db_giv = await get_from_db_dobj(ctx.author)
         if db_giv.cookies - amount > 0:
             db_giv.cookies -= amount
             db_recip.cookies += amount
@@ -76,7 +76,7 @@ class CookieCog(Cog):
         """
         if user is None:
             user = ctx.author
-        db_user = await get_from_db(user)
+        db_user = await get_from_db_dobj(user)
         cookies = db_user.cookies
         level = db_user.level
         nxl = db_user.level + 1
@@ -95,7 +95,7 @@ class CookieCog(Cog):
         """
         board = []
         for m in ctx.guild.members:
-            db = await get_from_db(m)
+            db = await get_from_db_dobj(m)
             if db.cookies > 0:
                 board.append([m.name, db.level, db.cookies])
         board.sort(reverse=True, key=self.sort_key2)

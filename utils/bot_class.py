@@ -12,7 +12,7 @@ from discord.ext.commands.bot import AutoShardedBot
 from utils import config as config
 from utils.ctx_class import MyContext
 from utils.logger import FakeLogger
-from utils.models import get_from_db
+from utils.models import get_from_db_dobj
 
 
 class dOGbot(AutoShardedBot):
@@ -91,9 +91,6 @@ class dOGbot(AutoShardedBot):
         for message in messages:
             self.logger.info(message)
 
-        for message in messages:
-            print(message)
-
 
 async def get_prefix(bot: dOGbot, message: discord.Message):
     forced_prefixes = bot.config["bot"]["prefixes"]
@@ -106,7 +103,7 @@ async def get_prefix(bot: dOGbot, message: discord.Message):
     else:
 
         if bot.config["database"]["enable"]:
-            db_guild = await get_from_db(message.guild)
+            db_guild = await get_from_db_dobj(message.guild)
             guild_prefix = db_guild.prefix
             if guild_prefix:
                 forced_prefixes.append(guild_prefix)

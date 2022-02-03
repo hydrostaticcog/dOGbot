@@ -1,7 +1,7 @@
 from discord.ext import commands
 
 from utils.ctx_class import MyContext
-from utils.models import get_from_db
+from utils.models import get_from_db_dobj
 
 
 class NotInServer(commands.CheckFailure):
@@ -41,7 +41,7 @@ def needs_access_level(required_access):
         if not ctx.guild:
             raise commands.NoPrivateMessage()
         else:
-            db_user = await get_from_db(ctx.author)
+            db_user = await get_from_db_dobj(ctx.author)
 
             access = db_user.get_access_level()
             if access >= required_access:
