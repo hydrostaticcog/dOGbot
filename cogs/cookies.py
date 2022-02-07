@@ -99,7 +99,7 @@ class CookieCog(Cog):
             if db.cookies > 0:
                 board.append([m.name, db.level, db.cookies])
         board.sort(reverse=True, key=self.sort_key2)
-        embed = await leaderboard_embed(ctx=ctx, bot=self.bot, board=board)
+        embed = leaderboard_embed(ctx=ctx, bot=self.bot, board=board)
         await ctx.send(embed=embed)
 
     def sort_key2(self, company):

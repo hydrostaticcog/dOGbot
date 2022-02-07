@@ -14,7 +14,7 @@ from utils.embeds import mod_message_embed
 async def check_warns(member: discord.Member):
     db = await get_from_db_dobj(member)
     if db.warns > 3:
-        await member.ban(reason="More than 3 warnings!")
+        await member.kick(reason="More than 3 warnings!")
     return
 
 
@@ -38,12 +38,15 @@ class ModCog(Cog):
         Ban a user
         """
         case_id = await create_case(user, ctx.author, reason, ctx.guild, "ban")
+        try:
+            await user.send(embed=mod_message_embed(ctx, self.bot, case_id, "ban", reason))
+        except discord.Forbidden or discord.errors.HTTPException:
+            pass
         await ctx.guild.ban(user, reason=reason)
-        await mod_message_embed(ctx, self.bot, case_id, "ban", reason)
         await ctx.send(f":ok_hand: - Banned {user.mention}, case ID {case_id}")
 
     @commands.command()
-    @commands.has_permissions(manage_members=True)
+    @commands.has_guild_permissions()
     async def case(self, ctx: MyContext, id):
         """
         Get a case/mod action
@@ -69,6 +72,10 @@ class ModCog(Cog):
         Kick a user
         """
         case_id = await create_case(user, ctx.author, reason, ctx.guild, "kick")
+        try:
+            await user.send(embed=mod_message_embed(ctx, self.bot, case_id, "kick", reason))
+        except discord.Forbidden or discord.errors.HTTPException:
+            pass
         await ctx.guild.kick(user)
         await ctx.send(f":ok_hand: - Kicked {user.mention}, case ID {case_id}")
 

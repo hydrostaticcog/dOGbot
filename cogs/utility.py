@@ -140,5 +140,17 @@ class Utils(Cog):
         """
         await ctx.send("<:Reddit:934847835462041651> Go check out the Dog SMP's subreddit! <https://dogsmp.reddit.com>")
 
+    @commands.Cog.listener()
+    async def on_member_join(self, member: discord.Member):
+        category = self.bot.get_channel(879035850959241276)
+        guild = self.bot.get_guild(category.guild.id)
+        await category.edit(name=f"『🐕』 Puppies: {len(guild.members)}")
+
+    @commands.Cog.listener()
+    async def on_member_remove(self, member: discord.Member):
+        category = self.bot.get_channel(879035850959241276)
+        guild = self.bot.get_guild(category.guild.id)
+        await category.edit(name=f"『🐕』 Puppies: {len(guild.members)}")
+
 
 setup = Utils.setup
