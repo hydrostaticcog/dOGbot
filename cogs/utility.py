@@ -152,5 +152,44 @@ class Utils(Cog):
         guild = self.bot.get_guild(category.guild.id)
         await category.edit(name=f"『🐕』 Puppies: {len(guild.members)}")
 
+    @commands.command()
+    @commands.guild_only()
+    @commands.has_guild_permissions()
+    async def create_muted_role(self, ctx: MyContext):
+        """
+        Create the muted role
+        """
+        ROLE_NAME = "dOGbot_Muted"
+        """
+        Inspired by GetBeaned
+        """
+        muted_role = discord.utils.get(ctx.guild.roles, name=ROLE_NAME)
+
+        if not muted_role:
+            muted_role = await ctx.guild.create_role(name=ROLE_NAME)
+
+        text_overwrite = discord.PermissionOverwrite()
+        text_overwrite.update(send_messages=False, add_reactions=False, create_instant_invite=False)
+
+        voice_overwrite = discord.PermissionOverwrite()
+        voice_overwrite.update(speak=False, create_instant_invite=False)
+
+        for channel in ctx.guild.channels:
+            current_channel_permissions = ctx.message.guild.me.permissions_in(channel)
+            if not isinstance(channel, discord.TextChannel) and not isinstance(channel, discord.VoiceChannel):
+                continue
+
+            if not current_channel_permissions.manage_roles or not current_channel_permissions.manage_channels:
+                continue
+
+            if isinstance(channel, discord.TextChannel):
+                await channel.set_permissions(muted_role, overwrite=None)
+                await channel.set_permissions(muted_role, overwrite=text_overwrite)
+            elif isinstance(channel, discord.VoiceChannel):
+                await channel.set_permissions(muted_role, overwrite=None)
+                await channel.set_permissions(muted_role, overwrite=voice_overwrite)
+
+        await ctx.send("The muted role has been successfully created.")
+
 
 setup = Utils.setup

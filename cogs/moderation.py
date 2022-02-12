@@ -88,5 +88,38 @@ class ModCog(Cog):
             await db.save()
             await check_warns(message.author)
 
+    @commands.command()
+    @commands.has_permissions(kick_members=True)
+    async def mute(self, ctx: MyContext, user: discord.Member, reason: str = "none given"):
+        """
+        Mutes a member
+        """
+        muted_role = discord.utils.get(ctx.guild.roles, name="dOGbot_muted")
+        if not muted_role:
+            return await ctx.send(f"Muted role not yet created! Please run {ctx.prefix}create_muted_role !")
+        case_id = await create_case(user, ctx.author, reason, ctx.guild, "mute")
+        try:
+            await user.send(embed=mod_message_embed(ctx, self.bot, case_id, "mute", reason))
+        except discord.Forbidden or discord.errors.HTTPException:
+            pass
+        await user.add_roles(muted_role, reason=reason)
+        await ctx.send(f":ok_hand: - Muted {user.mention}, case ID {case_id}")
+
+    @commands.command()
+    @commands.has_permissions(kick_members=True)
+    async def unmute(self, ctx: MyContext, user: discord.Member, reason: str = "none given"):
+        """
+        Unmutes a member
+        """
+        muted_role = discord.utils.get(ctx.guild.roles, name="dOGbot_muted")
+        if not muted_role:
+            return await ctx.send(f"Muted role not yet created! Please run {ctx.prefix}create_muted_role !")
+        try:
+            await user.send(embed=mod_message_embed(ctx, self.bot, "null", "unmute", reason))
+        except discord.Forbidden or discord.errors.HTTPException:
+            pass
+        await user.remove_roles(muted_role, reason=reason)
+        await ctx.send(f":ok_hand: - Unmuted {user.mention}")
+
 
 setup = ModCog.setup
