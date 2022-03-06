@@ -12,9 +12,10 @@ from aiohttp.web_exceptions import HTTPNotFound, HTTPForbidden, HTTPBadRequest, 
 from discord.ext import tasks
 
 from utils.cog_class import Cog
+from utils.models import get_from_db_act
 
 
-class UptimeCog(Cog):
+class APICog(Cog):
     def __init__(self, bot, *args, **kwargs):
         super().__init__(bot, *args, **kwargs)
         self.app = web.Application()
@@ -34,10 +35,25 @@ class UptimeCog(Cog):
         result = {"online": True}
         return web.json_response(result)
 
+    async def case_fetch(self, request):
+        case_id = request.match_info['id']
+        case = await get_from_db_act(case_id)
+        response = {
+            "id": case.id,
+            "victim": case.victim_id,
+            "reason": case.note,
+            "issuer": case.issuer_id,
+            "type": case.type,
+            "guild": case.guild_id,
+            "timestamp": str(datetime.fromtimestamp(case.id))
+        }
+        return web.json_response(response)
+
     async def run(self):
         await self.bot.wait_until_ready()
         routes = [
             ('GET', '/', self.online_check),
+            ('GET', '/cases/{id}', self.case_fetch)
         ]
         for route_method, route_path, route_coro in routes:
             resource = self.cors.add(self.app.router.add_resource(route_path))
@@ -60,4 +76,4 @@ class UptimeCog(Cog):
         routes = web.RouteTableDef()
 
 
-setup = UptimeCog.setup
+setup = APICog.setup

@@ -74,9 +74,9 @@ class ModCog(Cog):
         case_id = await create_case(user, ctx.author, reason, ctx.guild, "kick")
         try:
             await user.send(embed=mod_message_embed(ctx, self.bot, case_id, "kick", reason))
-        except discord.Forbidden or discord.errors.HTTPException:
+        except discord.errors.HTTPException:
             pass
-        await ctx.guild.kick(user)
+            await ctx.guild.kick(user)
         await ctx.send(f":ok_hand: - Kicked {user.mention}, case ID {case_id}")
 
     @commands.Cog.listener()
