@@ -114,8 +114,8 @@ class Utils(Cog):
         if not ctx.invoked_subcommand:
             embed = discord.Embed(title="The Dog SMP!", color=self.bot.color, description="Join us on the Minecraft "
                                                                                           "Server!")
-            embed.add_field(name="IP", value="`dog-smp.hydrostaticcog.me` Java/Bedrock (default ports)", inline=False)
-            embed.add_field(name="Web Map", value="`https://dog-smp.hydrostaticcog.me:8123`")
+            embed.add_field(name="IP", value="`play.dogsmp.net` Java/Bedrock (default ports)", inline=False)
+            embed.add_field(name="Web Map", value="`https://map.dogsmp.net`")
             await ctx.send(embed=embed)
 
     @smp.command()
@@ -123,7 +123,7 @@ class Utils(Cog):
         """
         Checks the uptime of the SMP
         """
-        resp = requests.get("https://api.mcsrvstat.us/2/dog-smp.hydrostaticcog.me")
+        resp = requests.get("https://api.mcsrvstat.us/2/play.dogsmp.net")
         is_online = resp.json()['online']
         if is_online:
             status = "online"
@@ -142,15 +142,17 @@ class Utils(Cog):
 
     @commands.Cog.listener()
     async def on_member_join(self, member: discord.Member):
-        category = self.bot.get_channel(879035850959241276)
-        guild = self.bot.get_guild(category.guild.id)
-        await category.edit(name=f"『🐕』 Puppies: {len(guild.members)}")
+        if member.guild.id == 772889538300608512:
+            category = self.bot.get_channel(879035850959241276)
+            guild = self.bot.get_guild(category.guild.id)
+            await category.edit(name=f"『🐕』 Puppies: {len(guild.members)}")
 
     @commands.Cog.listener()
     async def on_member_remove(self, member: discord.Member):
-        category = self.bot.get_channel(879035850959241276)
-        guild = self.bot.get_guild(category.guild.id)
-        await category.edit(name=f"『🐕』 Puppies: {len(guild.members)}")
+        if member.guild.id == 772889538300608512:
+            category = self.bot.get_channel(879035850959241276)
+            guild = self.bot.get_guild(category.guild.id)
+            await category.edit(name=f"『🐕』 Puppies: {len(guild.members)}")
 
     @commands.command()
     @commands.guild_only()
